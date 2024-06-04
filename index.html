@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap 5 main.css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- slick slider start  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Ekshop</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand d-flex align-items-center" href="/"><img src="./assets/images/logo.png"
+                                class="img-fluid" /></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-nowrap" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-nowrap" href="pricing.html">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-nowrap" href="solutions.html">Solutions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-nowrap" href="howItWorks.html">How it
+                                        Works</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-nowrap" href="offers.html">Offers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-nowrap" href="login.html">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="pt-3 pb-5">
+                        <img src="./assets/images/hero-image.png" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="py-5">
+                        <h2 class="title">Start Selling on your Facebook, Website, Mobile App and Outlet</h2>
+                        <p class="short-message pt-3 mt-xl-4">Swift, hassle-free, mobile-friendly,
+                            gorgeous- need we say more?
+                            Create
+                            the online shop your
+                            brand deserves in minutes.</p>
+                        <div class="pb-5"><a href="" class="btn cta-btn mt-4 mt-xl-5">Create Free Store Now! <span><i
+                                        class="fa-solid fa-arrow-right"></i></span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- lisht box start -->
+    <section class="video-section pb-3 pb-xl-5">
+        <div class="container pb-5">
+            <div class="video-container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="p-3 p-xl-5">
+                            <p class="small-title">See Storola in Action</p>
+                            <h3 class="large-title my-2">Take a 2 - minutes walkthrough of the full
+                                <strong>Storola</strong>
+                                platform
+                            </h3>
+                            <a href="" class="btn watch-video-btn text-uppercase">Watch Video <span> <span><i
+                                            class="fa-solid fa-arrow-right"></i></span></span></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="video-light-box">
+                            <div class="light-box-img">
+                                <img src="./assets/images/Frame-35065.png" class="img-fluid" alt="image" />
+                                <div class="centered mt-2">
+                                    <button id="playme" onclick="revealVideo('video','youtube')"><img
+                                            src="./assets/images/Group34993.png" class="img-fluid rounded"
+                                            style="height: 150px; width: 150px;" /></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+        <div class="lightbox-container">
+            <div class="lightbox-content">
+                <button onclick="hideVideo('video','youtube')" class="lightbox-close" data-toggle="lightbox">
+                    <i class="fa-solid fa-xmark fs-1 lightbox-close-icon"></i>
+                </button>
+            </div>
+            <div class="lightbox-fullscreen">
+                <div class="popup-bg"></div>
+                <div class="video-container" style="width: 90%; margin: 0 auto;">
+                    <iframe id="youtube" src="https://www.youtube.com/embed/Wh0q8vdH-ro?si=9uHuSp02EK005Hfc"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- lisht box end -->
+
+    <section class="admin-panel py-3 my-xl-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-5 d-flex align-items-center justify-content-start">
+                    <div class="left-side">
+                        <h2 class="title pb-2 pb-xl-4">Powerful Admin Panel</h2>
+                        <p class="py-3">Get full picture of your business from one dashboard. With one unified
+                            dashboard
+                            monitor your
+                            ecommerce and retail stores operations realtime with minimum effort.</p>
+
+                        <p class="py-3">Get full picture of your business from one dashboard. With one unified
+                            dashboard
+                            monitor your
+                            ecommerce and retail stores operations realtime with minimum effort.</p>
+                        <div class="pb-5"><a href="" class="btn cta-btn mt-4 mt-xl-4">Create Free Store Now!
+                                <span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-7">
+                    <div class="right-side">
+                        <div class="admin-panel-card d-flex gap-2 gap-xl-4 p-2 p-xl-5 my-3 shadow-lg">
+                            <img src="./assets/images/icons/bar_chart_4_bars.png" class="img-fluid icons" />
+                            <div>
+                                <h5 class="title">Powerful Admin Panel</h5>
+                                <p class="short-message pt-2">Get full picture of your business from one dashboard. With
+                                    one
+                                    unified dashboard
+                                    monitor your ecommerce and retail stores operations realtime with minimum effort.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="admin-panel-card d-flex gap-2 gap-xl-4 p-2 p-xl-5 my-3 shadow-lg">
+                            <div class=""><img src="./assets/images/icons/Marketers.png" class="img-fluid icons" />
+                            </div>
+                            <div>
+                                <h5 class="title">Powerful Admin Panel</h5>
+                                <p class="short-message pt-2">Get full picture of your business from one dashboard. With
+                                    one
+                                    unified dashboard
+                                    monitor your ecommerce and retail stores operations realtime with minimum effort.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="admin-panel-card d-flex gap-2 gap-xl-4 p-2 p-xl-5 my-3 shadow-lg">
+                            <div class=""><img src="./assets/images/icons/shopping_cart.png" class="img-fluid icons" />
+                            </div>
+                            <div>
+                                <h5 class="title">Powerful Admin Panel</h5>
+                                <p class="short-message pt-2">Get full picture of your business from one dashboard. With
+                                    one
+                                    unified dashboard
+                                    monitor your ecommerce and retail stores operations realtime with minimum effort.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-6 d-flex align-items-center">
+                    <div>
+                        <h2 class="title pb-4">All the cool features</h2>
+                        <p class="short-message">Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio
+                            ac.
+                            In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras
+                            ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.</p>
+                        <div class="py-3"><a href="" class="btn cta-btn mt-4 mt-xl-4">View all the features
+                                <span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div>
+                        <img src="./assets/images/Right.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="real-store">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 pb-5">
+                    <h2 class="title">ONLINE STORE <span>EXAMPLES <br />
+                            TO EXPLORE</span></h2>
+                    <p>Real stores built by real people.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-1">
+            <div class="col-sm-6 col-md-6 col-xl-4 py-3">
+                <div class="card border-0 bg-transparent shadow-lg">
+                    <img src="./assets/images/image 261.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">Online store screenshot with attractive headline will be here</h5>
+                        <hr>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="date">May 27, 2024</div>
+                            <div class="d-flex gap-2 align-items-center"><a href="#" class="view--store-btn">view
+                                    store
+                                    <span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-xl-4 py-3">
+                <div class="card border-0 bg-transparent shadow-lg">
+                    <img src="./assets/images/image 261.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">Online store screenshot with attractive headline will be here</h5>
+                        <hr>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="date">May 27, 2024</div>
+                            <div class="d-flex gap-2 align-items-center"><a href="#" class="view--store-btn">view
+                                    store
+                                    <span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-xl-4 py-3">
+                <div class="card border-0 bg-transparent shadow-lg">
+                    <img src="./assets/images/image 261.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">Online store screenshot with attractive headline will be here</h5>
+                        <hr>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="date">May 27, 2024</div>
+                            <div class="d-flex gap-2 align-items-center"><a href="#" class="view--store-btn">view
+                                    store
+                                    <span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                    <div>
+                        <h3 class="title">1000+ Business <br /><span>Trust Us!</span></h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-7 col-lg-8 col-xl-9">
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide d-flex justify-content-start align-items-center">
+                                <img src="./assets/images/icons/Logo-grey.png" class="img-fluid" />
+                            </div>
+                            <div class="slide d-flex justify-content-start align-items-center">
+                                <img src="./assets/images/icons/Logo-grey.png" class="img-fluid" />
+                            </div>
+                            <div class="slide d-flex justify-content-start align-items-center">
+                                <img src="./assets/images/icons/Logo-grey.png" class="img-fluid" />
+                            </div>
+                            <div class="slide d-flex justify-content-start align-items-center">
+                                <img src="./assets/images/icons/Logo-grey.png" class="img-fluid" />
+                            </div>
+                            <div class="slide d-flex justify-content-start align-items-center">
+                                <img src="./assets/images/icons/Logo-grey.png" class="img-fluid" />
+                            </div>
+                            <div class="slide d-flex justify-content-start align-items-center">
+                                <img src="./assets/images/icons/Logo-grey.png" class="img-fluid" />
+                            </div>
+                            <div class="slide d-flex justify-content-start align-items-center">
+                                <img src="./assets/images/icons/Logo-grey.png" class="img-fluid" />
+                            </div>
+                            <div class="slide d-flex justify-content-start align-items-center">
+                                <img src="./assets/images/icons/Logo-grey.png" class="img-fluid" />
+                            </div>
+                            <div class="slide d-flex justify-content-start align-items-center">
+                                <img src="./assets/images/icons/Logo-grey.png" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ecommerce-platforms py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <img src="./assets/images/5-Screens-App-UI-Mockup 2.png" class="img-fluid" />
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div>
+                        <div>
+                            <h5 class="title">We are providing one stop mobile app solution for worldwide famous
+                                Ecommerce Websites platforms!</h5>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center gap-4 py-2">
+                            <div class="icons p-2 text-center"><img src="./assets/images/icons/image 266.png"
+                                    class="img-fluid bg-transparent" /></div>
+                            <div class="icons p-2 text-center"><img src="./assets/images/icons/logo 2.png"
+                                    class="img-fluid bg-transparent" /></div>
+                            <div class="icons p-2 text-center"><img src="./assets/images/icons/913_opencart 1.png"
+                                    class="img-fluid bg-transparent" /></div>
+
+                        </div>
+                        <div>
+                            <p class="py-4">We are providing one stop mobile app solution for worldwide famous
+                                Ecommerce Websites platforms!</p>
+                        </div>
+                        <div class="d-flex gap-4 align-items-center">
+                            <img src="./assets/images/icons/app-Button.png" class="img-fluid" />
+                            <img src="./assets/images/icons/Button.png" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="all-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                    <div>
+                        <p class="slogan">We're packed full of features..</p>
+                        <h2 class="title pt-2 pb-4">All the features you need in one place</h2>
+                        <p class="short-message">We're eCommerce nerds, constantly on the look out for innovating and
+                            exciting new features to expand our already rich marketplace of apps. You can trust us to
+                            keep up with the latest trends and advances in eCommerce technology.</p>
+                        <div class="pb-5"><a href="" class="btn cta-btn mt-4 mt-xl-4">View more the features
+                                <span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <img src="./assets/images/Right (1).png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="online-store py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                    <div class="">
+                        <h2 class="title">HOW TO START AN <br />
+                            <span class="">ONLINE STORE</span>
+                        </h2>
+                        <p class="my-3">Creating your own online store has never been easier. With ekshop, you have
+                            everything you
+                            need to take your small business online.</p>
+                        <ul>
+                            <li class="d-flex gap-2 align-items-center"> <i class="fa-solid fa-check"></i> Create a free
+                                account and answer
+                                a few questions about your store.</li>
+                            <li class="d-flex gap-2 align-items-center"> <i class="fa-solid fa-check"></i> Create a free
+                                account and answer
+                                a few questions about your store.</li>
+                            <li class="d-flex gap-2 align-items-center"> <i class="fa-solid fa-check"></i> Create a free
+                                account and answer
+                                a few questions about your store.</li>
+                            <li class="d-flex gap-2 align-items-center"> <i class="fa-solid fa-check"></i> Create a free
+                                account and answer
+                                a few questions about your store.</li>
+
+                        </ul>
+                        <div class="pb-5"><a href="" class="btn cta-btn mt-4 mt-xl-4">Create Free Store Now!
+                                <span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <img src="./assets/images/Col.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="high-cost-store">
+        <div class="container">
+            <h2 class="title">Start your online store without high costs</h2>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+                    <div class="card w-100 h-100 p-5">
+                        <div class="text-center"><img src="./assets/images/icons/circle.png" class="img-fluid" /></div>
+                        <div class="title pt-3 px-0 px-xl-5">Create your online store
+                            for free</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+                    <div class="card w-100 h-100 p-5">
+                        <div class="text-center"><img src="./assets/images/icons/circle2.png" class="img-fluid" /></div>
+                        <div class="title pt-3 px-0 px-xl-5">Create your online store
+                            for free</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+                    <div class="card w-100 h-100 p-5">
+                        <div class="text-center"><img src="./assets/images/icons/circle (1).png" class="img-fluid" />
+                        </div>
+                        <div class="title pt-3 px-0 px-xl-5">Create your online store
+                            for free</div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center pt-5"><a href="" class="btn cta-btn mt-4 mt-xl-4">See Pricings
+                    <span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+        </div>
+    </section>
+
+    <section class="one-click-store py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <div class="py-5">
+                        <h2>Your Online Store is One Click Away</h2>
+                        <div class="d-flex justify-content-center"><a href="" class="btn cta-btn mt-4 mt-xl-4">Create
+                                your Online Store
+                                <span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="footer-main py-4">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-gl-4 col-xl-4 py-3">
+                        <div class="">
+                            <h5 class="title pb-3">Enjoy your finest shopping experience with ekShop!</h5>
+                            <p class="short-message">Make your shopping experience smooth like never before with ekShop,
+                                the world's first integrated assisted rural e-Commerce platform. ekShop incorporates all
+                                the top e-Commerce, payments, and logistic players into one platform and acts as a
+                                national e-Commerce infrastructure backbone. With a continuous effort to escalate in a
+                                global e-commerce market, a search in its platform can compare similar products drawn
+                                from multiple e-Commerce platforms in a single window, increasing the chances of a
+                                consumer finding a preferred outcome, in contrast to the potential limitations of
+                                choosing in a particular site. The same system enables producers and retailers to sell
+                                their products to the market participants as a single-entry point. They can go to the
+                                government-owned union digital centre or virtually enter as a vendor into the platform
+                                and upload their product to ekShop. It automatically is available to ekShop's partners'
+                                eCommerce websites.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-gl-4 col-xl-3 py-3">
+                        <div class="">
+                            <h5 class="title pb-3">Products</h5>
+                            <ul>
+                                <li class="py-2"><a href="#">OC Toy Four</a></li>
+                                <li class="py-2"><a href="#">OC Toy Three</a></li>
+                                <li class="py-2"><a href="#">OC Toy Two</a></li>
+                                <li class="py-2"><a href="#">OC Toy One</a></li>
+                                <li class="py-2"><a href="#">OC Autopart Four</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-gl-4 col-xl-2 py-3">
+                        <div class="">
+                            <h5 class="title pb-3">Support</h5>
+                            <ul>
+                                <li class="py-2"><a href="#">Contact Us</a></li>
+                                <li class="py-2"><a href="#">FAQ</a></li>
+                                <li class="py-2"><a href="#">How it works</a></li>
+                                <li class="py-2"><a href="#">Contact Us</a></li>
+                                <li class="py-2"><a href="#">Terms & Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-gl-4 col-xl-3 py-3">
+                        <div class="">
+                            <h5 class="title pb-3">Have Questions ?</h5>
+                            <ul>
+                                <li class="py-2"><a href="#">Contact Number : +880 9638-007007</a></li>
+                                <li class="py-2"><a href="#"> Email ID : support@ekshop.gov.bd</a></li>
+                            </ul>
+                            <address class="pt-3">
+                                Address : <br />
+                                Asha Center, House-44, Road 2/A,<br />
+                                Dhanmondi, Dhaka-1209<br />
+                                Bangladesh
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-7">
+                        <ul class="d-flex text-wrap justify-content-start align-items-center">
+                            <li class="px-2">©2024 EkShop. All Right Reserved</li>
+                            <li class="px-2"><a href="#" class="">Terms of Service</a></li>
+                            <li class="px-2"><a href="#" class="">Privacy Policy</a></li>
+                            <li class="px-2"><a href="#" class="">Manage Cookies</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-5">
+                        <div class="d-flex justify-content-start justify-content-xl-end align-items-center">
+                            <div class="px-2 text-white"><i class="fa-brands fa-youtube"></i></div>
+                            <div class="px-2 text-white"><i class="fa-brands fa-facebook-f"></i></div>
+                            <div class="px-2 text-white"><i class="fa-brands fa-twitter"></i></div>
+                            <div class="px-2 text-white"><i class="fa-brands fa-instagram"></i></div>
+                            <div class="px-2 text-white"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="px-2"><img src="./assets/images/icons/app-Button.png" class="img-fluid" /></div>
+                            <div class="px-2"><img src="./assets/images/icons/Button.png" class="img-fluid" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
