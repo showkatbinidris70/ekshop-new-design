@@ -857,6 +857,174 @@ header .navbar-light button span {
   color: #009ef7;
 }
 /* login end */
+/* create- store start */
+.create-store-section {
+  background: linear-gradient(264.46deg, #60a544 0%, #9ab83c 100.57%);
+}
+
+.create-store-section .create-store-title {
+  font-family: Source Sans Pro;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: left;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.create-store-container .title {
+  background: linear-gradient(264.46deg, #631974 0%, #8d258b 100.57%);
+  font-family: Source Sans Pro;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: left;
+  color: #fff;
+  padding: 12px 24px 24px 24px;
+}
+
+.create-store-container .top-search-bar label-style {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #242424;
+}
+
+.create-store-container .top-search-bar .form-control {
+  /* width: 293px; */
+  height: 32px;
+  padding: 0px 10px 0px 10px;
+  border-radius: 4px;
+  border: 1px solid #b3b3b3;
+}
+
+.create-store-container .top-search-bar input::placeholder {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #707070;
+}
+
+.create-store-container .top-search-bar .form-control:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #92278f;
+}
+
+.create-store-container form label {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #242424;
+}
+
+.create-store-container form label span {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #b10e1c;
+}
+
+.create-store-container form input::placeholder {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #707070;
+}
+
+.create-store-container form .form-control:focus {
+  border-bottom: 1px solid #0f6cbd;
+  box-shadow: none;
+  border-top: 1px solid #d1d1d1;
+  border-left: 1px solid #d1d1d1;
+  border-right: 1px solid #d1d1d1;
+}
+
+.create-store-container form.form-control {
+  padding-right: 2.375rem;
+}
+
+.create-store-container form .form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  color: #aaa;
+}
+
+.create-store-container form:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
+
+.create-store-container .radio-btn .online-business {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #242424;
+}
+
+.create-store-container .radio-btn label {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #616161;
+}
+
+.create-store-container .create-store-footer .cta-btn {
+  background: #84b13f;
+  padding: 15px 42px 15px 42px;
+  border-radius: 4px;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: var(--text_white);
+}
+
+.create-store-container .create-store-footer .cta-btn:hover {
+  background: #678b31;
+}
+
+.create-store-container .create-store-footer .terms-and-conditions {
+  color: #242424;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.create-store-container .create-store-footer .terms-and-conditions a {
+  color: #242424;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+/* create- store end */
 /* footer start  */
 footer {
   background: #334155;
@@ -1240,6 +1408,11 @@ footer .footer-bottom ul li a {
     padding: 1.5rem 2rem;
     border-radius: 0px 0px 20px 20px;
   }
+   /* create store */
+   .create-store-container .title {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 375.98px) {
@@ -1392,18 +1565,11 @@ footer .footer-bottom ul li a {
     padding: 1.5rem 2rem;
     border-radius: 0px 0px 20px 20px;
   }
-  /* .login-container .signin-part .google-facebook-signup {
-    padding: 15px;
-    border-radius: 6px;
-    border: 1px solid #e8e9ea;
-    background-color: #e8e9ea;
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    color: #282828;
-  } */
+  /* create store */
+  .create-store-container .title {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 /* media query end */
