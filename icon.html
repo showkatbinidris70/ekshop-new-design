@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Layout</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        .hide-reveal>input[type="password"]::-ms-reveal {
+            display: none;
+        }
+
+        .hide-focus:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            border-color: #ced4da !important;
+        }
+
+        .show_hide_password input {
+            /* to hide the left border corners of button */
+            z-index: 10;
+        }
+
+        .show_hide_password button {
+            border-color: #ced4da #ced4da #ced4da transparent !important;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="input-group mb-3 hide-reveal show_hide_password">
+        <input type="password" class="form-control hide-focus border-end-0" placeholder="Password"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn bg-white border-top border-end border-bottom" type="button" id="button-addon2"><i
+                class="bi bi-eye"></i></button>
+    </div>
+    <script>
+        function addPasswordShowHide(el) {
+            el.querySelector("button").addEventListener("click", function (event) {
+                event.preventDefault();
+                if (el.querySelector("input").getAttribute("type") == "text") {
+                    el.querySelector("input").setAttribute("type", "password");
+                    el.querySelector("i").classList.remove("bi-eye-slash");
+                    el.querySelector("i").classList.add("bi-eye");
+                } else if (el.querySelector("input").getAttribute("type") == "password") {
+                    el.querySelector("input").setAttribute("type", "text");
+                    el.querySelector("i").classList.add("bi-eye-slash");
+                    el.querySelector("i").classList.remove("bi-eye");
+                }
+            });
+        }
+
+        document.querySelectorAll(".show_hide_password").forEach(addPasswordShowHide)
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

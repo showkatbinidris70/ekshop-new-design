@@ -31,3 +31,21 @@ function hideVideo(div, video_id) {
   document.getElementById(div).style.display = "none";
 }
 // lightbox video end
+
+// login page form icon
+function addPasswordShowHide(el) {
+  el.querySelector("button").addEventListener("click", function (event) {
+    event.preventDefault();
+    if (el.querySelector("input").getAttribute("type") == "text") {
+      el.querySelector("input").setAttribute("type", "password");
+      el.querySelector("i").classList.remove("bi-eye-slash");
+      el.querySelector("i").classList.add("bi-eye");
+    } else if (el.querySelector("input").getAttribute("type") == "password") {
+      el.querySelector("input").setAttribute("type", "text");
+      el.querySelector("i").classList.add("bi-eye-slash");
+      el.querySelector("i").classList.remove("bi-eye");
+    }
+  });
+}
+
+document.querySelectorAll(".show_hide_password").forEach(addPasswordShowHide);

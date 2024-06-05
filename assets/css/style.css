@@ -697,6 +697,166 @@ header .navbar-light button span {
   color: #ffffff;
 }
 /* one-click-store end */
+/* login start */
+.login-container {
+  background: linear-gradient(264.46deg, #8d258b 0%, #631974 100.57%);
+  border-radius: 20px;
+}
+
+.login-container .signin-part {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 4rem 5rem;
+  border-radius: 0px 18px 18px 0px;
+}
+
+.login-container .signin-part .signin-title {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #282828;
+}
+
+.login-container .signin-part .signin-short-message {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #31394d;
+}
+
+.login-container .signin-part label {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #242424;
+}
+
+.login-container .signin-part label span {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #b10e1c;
+}
+
+.login-container .signin-part form:placeholder {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #707070;
+}
+
+.login-container .signin-part form .form-control:focus {
+  border-bottom: 1px solid #0f6cbd;
+  box-shadow: none;
+  border-top: 1px solid #d1d1d1;
+  border-left: 1px solid #d1d1d1;
+  border-right: 1px solid #d1d1d1;
+}
+
+.login-container .signin-part .btn:focus {
+  box-shadow: none;
+}
+
+.login-container
+  .signin-part
+  .hide-reveal
+  > input[type="password"]::-ms-reveal {
+  display: none;
+}
+
+.login-container .signin-part .has-search-right {
+  position: relative;
+}
+
+.login-container .signin-part .has-search-right .form-control {
+  padding-right: 2.375rem;
+}
+
+.login-container .signin-part .has-search-right .form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  color: #aaa;
+}
+
+.login-container .signin-part .hide-focus:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
+
+.login-container .signin-part .show_hide_password button {
+  border-color: #ced4da #ced4da #ced4da transparent !important;
+}
+
+.login-container .signin-part .forgot-btn {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #009ef7;
+}
+
+.login-container .signin-part .send-btn {
+  padding: 14px 49px 14px 49px;
+  border-radius: 6px;
+  background: linear-gradient(264.46deg, #8d258b 0%, #631974 100.57%);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+}
+
+.login-container .signin-part .google-facebook-signup {
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e8e9ea;
+  background-color: #e8e9ea;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #282828;
+}
+
+.login-container .signin-part .signup-btn {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #7a828a;
+}
+
+.login-container .signin-part .signup-btn span {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #009ef7;
+}
+/* login end */
 /* footer start  */
 footer {
   background: #334155;
@@ -783,6 +943,14 @@ footer .footer-bottom ul li a {
   .all-features .cta-btn {
     padding: 10px 42px 10px 42px;
   }
+  /* login */
+  .login-container {
+    border-radius: 23px;
+  }
+  .login-container .signin-part {
+    padding: 3rem 2rem;
+    border-radius: 0px 20px 20px 0px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -818,6 +986,14 @@ footer .footer-bottom ul li a {
   }
   .all-features .cta-btn {
     padding: 10px 42px 10px 42px;
+  }
+  /* login */
+  .login-container {
+    border-radius: 23px;
+  }
+  .login-container .signin-part {
+    padding: 3rem 3rem;
+    border-radius: 0px 0px 20px 20px;
   }
 }
 
@@ -906,6 +1082,14 @@ footer .footer-bottom ul li a {
   }
   .all-features .cta-btn {
     padding: 10px 42px 10px 42px;
+  }
+  /* login */
+  .login-container {
+    border-radius: 23px;
+  }
+  .login-container .signin-part {
+    padding: 1.5rem 2rem;
+    border-radius: 0px 0px 20px 20px;
   }
 }
 
@@ -1047,6 +1231,14 @@ footer .footer-bottom ul li a {
   .one-click-store .cta-btn {
     padding: 10px 42px 10px 42px;
     font-size: 16px;
+  }
+  /* login */
+  .login-container {
+    border-radius: 23px;
+  }
+  .login-container .signin-part {
+    padding: 1.5rem 2rem;
+    border-radius: 0px 0px 20px 20px;
   }
 }
 
@@ -1192,6 +1384,26 @@ footer .footer-bottom ul li a {
     padding: 10px 42px 10px 42px;
     font-size: 16px;
   }
+  /* login */
+  .login-container {
+    border-radius: 23px;
+  }
+  .login-container .signin-part {
+    padding: 1.5rem 2rem;
+    border-radius: 0px 0px 20px 20px;
+  }
+  /* .login-container .signin-part .google-facebook-signup {
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #e8e9ea;
+    background-color: #e8e9ea;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #282828;
+  } */
 }
 
 /* media query end */
