@@ -541,6 +541,33 @@ header .navbar-light button span {
   text-align: center;
   color: #4457ff;
 }
+.real-store .slider {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 2.5rem;
+}
+
+.real-store .slider .item {
+  animation: animate 25s linear infinite;
+  min-width: 33.33%;
+  padding: 0 30px;
+}
+
+.real-store .slider:hover .item {
+  animation-play-state: paused;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-500px, 0, 0);
+  }
+}
 /* real-store end */
 /* clients-logo start */
 .clients-logo {
@@ -1486,6 +1513,10 @@ footer .footer-bottom ul li a {
   .make-us-special {
     padding: 50px 0px 550px 0px;
   }
+  /* real store */
+  .real-store .slider .item {
+    min-width: 50%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -1533,6 +1564,10 @@ footer .footer-bottom ul li a {
   /* make-us-special start */
   .make-us-special {
     padding: 50px 0px 550px 0px;
+  }
+   /* real store */
+   .real-store .slider .item {
+    min-width: 50%;
   }
 }
 
@@ -1642,6 +1677,10 @@ footer .footer-bottom ul li a {
   .make-us-special .light-box-btn {
     height: 100px;
     width: 100px;
+  }
+   /* real store */
+   .real-store .slider .item {
+    min-width: 70%;
   }
 }
 
@@ -1810,6 +1849,10 @@ footer .footer-bottom ul li a {
 
   .make-us-special .content-box {
     width: 220px;
+  }
+   /* real store */
+   .real-store .slider .item {
+    min-width: 90%;
   }
 }
 
@@ -1981,6 +2024,10 @@ footer .footer-bottom ul li a {
 
   .make-us-special .content-box {
     width: 220px;
+  }
+   /* real store */
+   .real-store .slider .item {
+    min-width: 100%;
   }
 }
 
