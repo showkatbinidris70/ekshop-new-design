@@ -621,6 +621,26 @@ header .navbar-light button span {
   border-radius: 4px;
   width: 100%;
 }
+.ecommerce-platforms .swiper {
+  width: 100%;
+}
+
+.ecommerce-platforms .swiper-slide {
+  position: relative;
+  width: 250px;
+  height: 408px;
+  border-radius: 14px;
+  border: 1px solid rgba(177, 177, 177, 0.4);
+}
+
+.ecommerce-platforms .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  user-select: none;
+}
 /* ecommerce-platforms end */
 /* all-features start */
 .all-features {
@@ -671,6 +691,9 @@ header .navbar-light button span {
   line-height: 24px;
   text-align: left;
   color: var(--text_white);
+}
+.all-features .cta-btn:hover {
+  background: #749c37;
 }
 /* all-features end */
 /* online store start */
@@ -758,15 +781,18 @@ header .navbar-light button span {
   color: #0b0a33;
 }
 .high-cost-store .cta-btn {
-  padding: 22px 42px 22px 42px;
+  padding: 18px 42px;
   border-radius: 4px;
   background-color: #7f217c;
   font-family: Source Sans Pro;
-  font-size: 30px;
+  color: #ffffff;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  color: #ffffff;
+}
+.high-cost-store .cta-btn:hover {
+  background-color: #681965;
 }
 /* high-cost-store start */
 
@@ -788,7 +814,7 @@ header .navbar-light button span {
 }
 .one-click-store .cta-btn {
   padding: 22px 42px 22px 42px;
-  border-radius: 4px 0px 0px 0px;
+  border-radius: 4px;
   background-color: #7f217c;
   font-family: Source Sans Pro;
   font-size: 30px;
@@ -797,6 +823,10 @@ header .navbar-light button span {
   text-align: left;
   color: #ffffff;
 }
+.one-click-store .cta-btn:hover {
+  background-color: #631a60;
+}
+
 /* one-click-store end */
 /* make-us-special start */
 .make-us-special {
@@ -1742,18 +1772,7 @@ footer .footer-bottom ul li a {
     line-height: 40px;
     padding-bottom: 20px;
   }
-  .high-cost-store .cta-btn {
-    padding: 10px 42px 10px 42px;
-  }
-  /* one-click-store start */
-  .one-click-store h2 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .one-click-store .cta-btn {
-    padding: 10px 42px 10px 42px;
-    font-size: 16px;
-  }
+
   /* login */
   .login-container {
     border-radius: 23px;
@@ -1924,18 +1943,7 @@ footer .footer-bottom ul li a {
     line-height: 40px;
     padding-bottom: 20px;
   }
-  .high-cost-store .cta-btn {
-    padding: 10px 42px 10px 42px;
-  }
-  /* one-click-store start */
-  .one-click-store h2 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .one-click-store .cta-btn {
-    padding: 10px 42px 10px 42px;
-    font-size: 16px;
-  }
+
   /* login */
   .login-container {
     border-radius: 23px;
