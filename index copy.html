@@ -20,6 +20,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -830,110 +832,133 @@
 
     <section class="testimonial py-5">
         <div class="container">
-            <div class="row">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="col-12 col-lg-10 col-xl-10">
-                                <div class="card border-0 shadow-lg py-5 px-4" style="background-color: #F1F5F9;">
-                                    <div class="row">
-                                        <div class="col-ms-6 col-md-6 col-lg-5 d-flex justify-content-center">
-                                            <div class="blob m-2">
-                                                <img src="./assets/images/Rectangle 3.png" class="img-fluid" />
-                                            </div>
-                                        </div>
-                                        <div class=" col-ms-6 col-md-6 col-lg-7">
-                                            <h2 class="quote"><img src="./assets/images/icons/quote.png"
-                                                    class="img-fluid" style="width: 50px;" />
-                                            </h2>
-                                            <p class="description pt-3">Their design process is really unique. They
-                                                collaborated
-                                                with us
-                                                on our project. The communication was simple and transparent. They have
-                                                a
-                                                talented
-                                                team of designer who understands the insights very clearly and continues
-                                                to push
-                                                their efforts.</p>
-                                            <div class="text-end pe-4">
-                                                <div class="">CEO</div>
-                                                <div>Akbor Pathan</div>
-                                            </div>
-                                        </div>
-                                    </div>
+            <div class="d-flex justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-9">
+                    <div class="card border-0 shadow-lg py-5 px-4" style="background-color: #F1F5F9;">
+                        <div class="row">
+                            <div class="col-ms-6 col-md-6 col-lg-5 d-flex justify-content-center">
+                                <div class="blob m-2">
+                                    <img src="./assets/images/Rectangle 3.png" class="img-fluid" />
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="col-12 col-lg-10 col-xl-10">
-                                <div class="card border-0 shadow-lg py-5 px-4" style="background-color: #F1F5F9;">
-                                    <div class="row">
-                                        <div class="col-ms-6 col-md-6 col-lg-5 d-flex justify-content-center">
-                                            <div class="blob m-2">
-                                                <img src="./assets/images/Rectangle 3.png" class="img-fluid" />
-                                            </div>
-                                        </div>
-                                        <div class=" col-ms-6 col-md-6 col-lg-7">
-                                            <h2 class="quote"><img src="./assets/images/icons/quote.png"
-                                                    class="img-fluid" style="width: 50px;" />
-                                            </h2>
-                                            <p class="description pt-3">Their design process is really unique. They
-                                                collaborated
-                                                with us
-                                                on our project. The communication was simple and transparent. They have
-                                                a
-                                                talented
-                                                team of designer who understands the insights very clearly and continues
-                                                to push
-                                                their efforts.</p>
-                                            <div class="text-end pe-4">
-                                                <div class="">CEO</div>
-                                                <div>Akbor Pathan</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="col-12 col-lg-10 col-xl-10">
-                                <div class="card border-0 shadow-lg py-5 px-4" style="background-color: #F1F5F9;">
-                                    <div class="row">
-                                        <div class="col-ms-6 col-md-6 col-lg-5 d-flex justify-content-center">
-                                            <div class="blob m-2">
-                                                <img src="./assets/images/Rectangle 3.png" class="img-fluid" />
-                                            </div>
-                                        </div>
-                                        <div class=" col-ms-6 col-md-6 col-lg-7">
-                                            <h2 class="quote"><img src="./assets/images/icons/quote.png"
-                                                    class="img-fluid" style="width: 50px;" />
-                                            </h2>
-                                            <p class="description pt-3">Their design process is really unique. They
-                                                collaborated
-                                                with us
-                                                on our project. The communication was simple and transparent. They have
-                                                a
-                                                talented
-                                                team of designer who understands the insights very clearly and continues
-                                                to push
-                                                their efforts.</p>
-                                            <div class="text-end pe-4">
-                                                <div class="">CEO</div>
-                                                <div>Akbor Pathan</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class=" col-ms-6 col-md-6 col-lg-7">
+                                <h2 class="quote"><img src="./assets/images/icons/quote.png" class="img-fluid" />
+                                </h2>
+                                <p class="description pt-3">Their design process is really unique. They collaborated
+                                    with us
+                                    on our project. The communication was simple and transparent. They have a
+                                    talented
+                                    team of designer who understands the insights very clearly and continues to push
+                                    their efforts.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <style>
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <!-- Swiper -->
+    <section class="testimonial py-5">
+        <div class="container">
+            <div class="row">
+                <swiper-container class="mySwiper" navigation="true">
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center">
+                            <div class="col-12 col-lg-10 col-xl-9">
+                                <div class="card border-0 shadow-lg py-5 px-4" style="background-color: #F1F5F9;">
+                                    <div class="row">
+                                        <div class="col-ms-6 col-md-6 col-lg-5 d-flex justify-content-center">
+                                            <div class="blob m-2">
+                                                <img src="./assets/images/Rectangle 3.png" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div class=" col-ms-6 col-md-6 col-lg-7">
+                                            <h2 class="quote"><img src="./assets/images/icons/quote.png"
+                                                    class="img-fluid" style="width: 50px;" />
+                                            </h2>
+                                            <p class="description pt-3">Their design process is really unique. They
+                                                collaborated
+                                                with us
+                                                on our project. The communication was simple and transparent. They have
+                                                a
+                                                talented
+                                                team of designer who understands the insights very clearly and continues
+                                                to push
+                                                their efforts.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center">
+                            <div class="col-12 col-lg-10 col-xl-9">
+                                <div class="card border-0 shadow-lg py-5 px-4" style="background-color: #F1F5F9;">
+                                    <div class="row">
+                                        <div class="col-ms-6 col-md-6 col-lg-5 d-flex justify-content-center">
+                                            <div class="blob m-2">
+                                                <img src="./assets/images/Rectangle 3.png" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div class=" col-ms-6 col-md-6 col-lg-7">
+                                            <h2 class="quote"><img src="./assets/images/icons/quote.png"
+                                                    class="img-fluid" style="width: 50px;" />
+                                            </h2>
+                                            <p class="description pt-3">Their design process is really unique. They
+                                                collaborated
+                                                with us
+                                                on our project. The communication was simple and transparent. They have
+                                                a
+                                                talented
+                                                team of designer who understands the insights very clearly and continues
+                                                to push
+                                                their efforts.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
 
     <footer class="py-4">
         <div class="container">

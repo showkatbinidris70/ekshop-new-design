@@ -1414,6 +1414,42 @@ header .navbar-light button span {
   border-radius: 54% 77% 75% 50% / 79% 74% 58% 51%;
   margin-left: 3px;
 }
+.testimonial .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.testimonial .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonial .swiper-button-next,
+.swiper-button-prev {
+  background-color: #92278f;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 26px;
+}
+.testimonial .swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 26px !important;
+}
+.testimonial .swiper-pagination-bullet-active {
+  background-color: #92278f;
+}
 /* testimonial end */
 /* footer start  */
 footer {
@@ -1565,8 +1601,8 @@ footer .footer-bottom ul li a {
   .make-us-special {
     padding: 50px 0px 550px 0px;
   }
-   /* real store */
-   .real-store .slider .item {
+  /* real store */
+  .real-store .slider .item {
     min-width: 50%;
   }
 }
@@ -1678,9 +1714,19 @@ footer .footer-bottom ul li a {
     height: 100px;
     width: 100px;
   }
-   /* real store */
-   .real-store .slider .item {
+  /* real store */
+  .real-store .slider .item {
     min-width: 70%;
+  }
+
+  /* one-click-store  */
+  .one-click-store h2 {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .one-click-store .cta-btn {
+    padding: 10px 30px;
+    font-size: 24px;
   }
 }
 
@@ -1850,9 +1896,19 @@ footer .footer-bottom ul li a {
   .make-us-special .content-box {
     width: 220px;
   }
-   /* real store */
-   .real-store .slider .item {
+  /* real store */
+  .real-store .slider .item {
     min-width: 90%;
+  }
+
+  /* one-click-store  */
+  .one-click-store h2 {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .one-click-store .cta-btn {
+    padding: 10px 30px;
+    font-size: 24px;
   }
 }
 
@@ -2025,9 +2081,19 @@ footer .footer-bottom ul li a {
   .make-us-special .content-box {
     width: 220px;
   }
-   /* real store */
-   .real-store .slider .item {
+  /* real store */
+  .real-store .slider .item {
     min-width: 100%;
+  }
+
+  /* one-click-store  */
+  .one-click-store h2 {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .one-click-store .cta-btn {
+    padding: 10px 30px;
+    font-size: 24px;
   }
 }
 

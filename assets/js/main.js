@@ -50,8 +50,8 @@ function addPasswordShowHide(el) {
 
 document.querySelectorAll(".show_hide_password").forEach(addPasswordShowHide);
 
-// swiper slider
-var swiper = new Swiper(".swiper", {
+//coverflow_3d_swiper == swiper slider
+var coverflow_3d_swiper = new Swiper(".swiper", {
   effect: "coverflow",
   loop: true,
   grabCursor: true,
@@ -69,10 +69,15 @@ var swiper = new Swiper(".swiper", {
   },
   on: {
     click(event) {
-      swiper.slideTo(this.clickedIndex);
+      coverflow_3d_swiper.slideTo(this.clickedIndex);
     },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
 });
