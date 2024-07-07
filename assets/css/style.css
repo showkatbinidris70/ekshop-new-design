@@ -88,9 +88,9 @@ header .navbar-nav .nav-item .nav-link {
   font-weight: 700;
   line-height: 24.55px;
   letter-spacing: -0.30000001192092896px;
-  height: 68px;
+  /* height: 68px; */
   /* padding: 22px 48px 21px 48px; */
-  padding: 16px 36px 16px 36px;
+  padding: 12px 28px;
   margin: 0px 2px;
   border: 0px 0px 6px 0px;
   background: #0000000d;
@@ -1451,6 +1451,73 @@ header .navbar-light button span {
   background-color: #92278f;
 }
 /* testimonial end */
+/* demo-projects start */
+.demo-projects .card {
+  box-shadow: 0 5px 14px -10px #000;
+}
+.demo-projects .card .card-img-top {
+  height: 30rem;
+}
+.demo-projects .card .title {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Poppins;
+}
+.demo-projects .card:hover {
+  box-shadow: 1px 4px 8px -2px #000;
+  transition: all 0.5s ease-in-out;
+}
+.demo-projects .card .card-footer {
+  background-color: #791f76;
+}
+.demo-projects .card .feature-btn {
+  background-color: #749c37;
+  font-size: 14px;
+  color: #fff;
+  font-family: Poppins;
+  font-weight: 400;
+}
+.demo-projects .card .feature-btn:hover {
+  background-color: #fff;
+  font-size: 14px;
+  color: #749c37;
+  transition: all 0.3s ease-in-out;
+}
+.demo-projects .card .live-demo-btn {
+  background-color: #749c37;
+  font-size: 14px;
+  color: #fff;
+  font-family: Poppins;
+  font-weight: 400;
+}
+.demo-projects .card .live-demo-btn:hover {
+  background-color: #fff;
+  font-size: 14px;
+  color: #749c37;
+  transition: all 0.3s ease-in-out;
+}
+.demo-projects .nav {
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.demo-projects .nav .nav-link {
+  font-size: 16px;
+  color: #92278f;
+  text-transform: capitalize;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+.demo-projects .nav-link.active {
+  background-color: #92278f;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.3s linear;
+  font-weight: 600;
+}
+/* demo-projects end */
 /* footer start  */
 footer {
   background: #334155;
@@ -1910,9 +1977,13 @@ footer .footer-bottom ul li a {
     padding: 10px 30px;
     font-size: 24px;
   }
+  /* demo-projects */
+  .demo-projects .card .card-img-top {
+    height: 30rem;
+  }
 }
 
-@media screen and (min-width: 320px) and (max-width: 375.98px) {
+@media screen and (min-width: 120px) and (max-width: 375.98px) {
   header .navbar .container-fluid {
     padding: 0;
   }
@@ -2094,6 +2165,10 @@ footer .footer-bottom ul li a {
   .one-click-store .cta-btn {
     padding: 10px 30px;
     font-size: 24px;
+  }
+  /* demo-projects */
+  .demo-projects .card .card-img-top {
+    height: 20rem;
   }
 }
 
