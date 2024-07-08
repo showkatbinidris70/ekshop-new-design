@@ -81,3 +81,76 @@ var coverflow_3d_swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+// see screenshot
+const images = [
+  { href: "./assets/images/features-01.webp", title: "Image 1" },
+  { href: "./assets/images/features-01.webp", title: "Image 2" },
+  { href: "./assets/images/features-01.webp", title: "Image 3" },
+];
+
+let currentIndex = 0;
+
+const lightbox = GLightbox({
+  elements: images,
+  openEffect: "zoom",
+  closeEffect: "fade",
+});
+
+document
+  .getElementById("see_screenshot")
+  .addEventListener("click", function () {
+    lightbox.openAt(currentIndex);
+  });
+
+document.body.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowLeft") {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : images.length - 1;
+    lightbox.openAt(currentIndex);
+  }
+  if (event.key === "ArrowRight") {
+    currentIndex = currentIndex < images.length - 1 ? currentIndex + 1 : 0;
+    lightbox.openAt(currentIndex);
+  }
+});
+
+// Add event listeners for left and right buttons
+document.body.addEventListener("click", function (event) {
+  if (event.target.id === "prevBtn") {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : images.length - 1;
+    lightbox.openAt(currentIndex);
+  }
+  if (event.target.id === "nextBtn") {
+    currentIndex = currentIndex < images.length - 1 ? currentIndex + 1 : 0;
+    lightbox.openAt(currentIndex);
+  }
+});
+
+document
+  .getElementById("see_screenshot_two")
+  .addEventListener("click", function () {
+    lightbox.openAt(currentIndex);
+  });
+
+document.body.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowLeft") {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : images.length - 1;
+    lightbox.openAt(currentIndex);
+  }
+  if (event.key === "ArrowRight") {
+    currentIndex = currentIndex < images.length - 1 ? currentIndex + 1 : 0;
+    lightbox.openAt(currentIndex);
+  }
+});
+
+// Add event listeners for left and right buttons
+document.body.addEventListener("click", function (event) {
+  if (event.target.id === "prevBtn") {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : images.length - 1;
+    lightbox.openAt(currentIndex);
+  }
+  if (event.target.id === "nextBtn") {
+    currentIndex = currentIndex < images.length - 1 ? currentIndex + 1 : 0;
+    lightbox.openAt(currentIndex);
+  }
+});

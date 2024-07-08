@@ -1518,6 +1518,64 @@ header .navbar-light button span {
   font-weight: 600;
 }
 /* demo-projects end */
+/* demo-features start */
+.demo-features .wrapper {
+  perspective: 1000px;
+}
+.demo-features .left-feature-img {
+  box-shadow: -5px 10px 20px 0 rgb(43 43 43 / 20%);
+  transform: rotateY(25deg);
+  transition: transform 0.3s ease;
+}
+.demo-features .left-feature-img:hover {
+  box-shadow: -5px 10px 20px 0 rgb(43 43 43 / 20%);
+  transform: rotateY(0deg);
+}
+.demo-features .right-feature-img {
+  box-shadow: -5px 10px 20px 0 rgb(43 43 43 / 20%);
+  transform: rotateY(-25deg);
+  transition: transform 0.3s ease;
+}
+.demo-features .right-feature-img:hover {
+  box-shadow: -5px 10px 20px 0 rgb(43 43 43 / 20%);
+  transform: rotateY(0deg);
+}
+
+.demo-features .title-border-left {
+  font-family: "Popinos";
+  color: #000;
+  font-size: 30px;
+  display: inline-block;
+  font-weight: 600;
+  position: relative;
+  border-left: 5px solid #84b13f;
+}
+.demo-features .title-border-right {
+  font-family: "Popinos";
+  color: #000;
+  font-size: 30px;
+  display: inline-block;
+  font-weight: 600;
+  position: relative;
+  border-right: 5px solid #84b13f;
+}
+
+.demo-features .description {
+  font-family: "Popinos";
+  color: #000;
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 400;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.demo-features .btn-screenshot {
+  background-color: #84b13f;
+  color: #fff;
+}
+/* demo-features end */
 /* footer start  */
 footer {
   background: #334155;
