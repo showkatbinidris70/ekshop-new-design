@@ -18,10 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -31,8 +29,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- swiper slider  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- GLightbox CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.1.0/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Ekshop</title>
@@ -120,9 +119,9 @@
     <section class="hero-image" style="height: 100px;">
         <img src="./assets/images/Section.jpg" class="img-fluid w-100" style="height: 100px;" />
     </section>
-    <section class="demo-features my-5">
+    <section class="demo-features my-5" data-aos="fade-up" data-aos-duration="2000">
         <div class="container">
-            <div class="mt-1 mb-5">
+            <div class="mt-1 mb-5" data-aos="fade-up" data-aos-duration="2000">
                 <h3 class="text-center title">Organic One Ecommerce web Site Features</h3>
                 <p class="shape"></p>
                 <img src="./assets/images/web-screens-1.webp" class="img-fluid" />
@@ -135,11 +134,11 @@
                     <div class=""><a href="#" class="btn btn-screenshot"> Go To OC Organic One Live Demo</a></div>
                 </div>
             </div>
-            <div class="mb-5 border-1 border-top">
-                <h3 class="text-center title pt-3">Features</h3>
+            <div class="mb-5 border-1 border-top data-aos=" fade-up" data-aos-duration="2000"">
+                <h3 class=" text-center title pt-3">Features</h3>
                 <p class="shape"></p>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5" data-aos="fade-up" data-aos-duration="2000">
                 <div class="col-sm-12 col-md-6 col-xl-5 d-flex align-items-center">
                     <div class="wrapper mb-3">
                         <img src="./assets/images/features-01.webp" class="img-fluid left-feature-img" />
@@ -160,7 +159,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5" data-aos="fade-up" data-aos-duration="2000">
                 <div class="col-sm-12 col-md-6 col-xl-7 d-flex align-items-center">
                     <div class="features-details my-3 my-md-0">
                         <div class="mb-3 text-end">
@@ -184,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5" data-aos="fade-up" data-aos-duration="2000">
                 <div class="col-sm-12 col-md-6 col-xl-5 d-flex align-items-center">
                     <div class="wrapper mb-3">
                         <img src="./assets/images/checkout.webp" class="img-fluid left-feature-img" />
@@ -204,7 +203,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5" data-aos="fade-up" data-aos-duration="2000">
                 <div class="col-sm-12 col-md-6 col-xl-7 d-flex align-items-center">
                     <div class="features-details my-3 my-md-0">
                         <div class="mb-3 text-end">
@@ -228,7 +227,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5" data-aos="fade-up" data-aos-duration="2000">
                 <div class="col-sm-12 col-md-6 col-xl-5 d-flex align-items-center">
                     <div class="wrapper mb-3">
                         <img src="./assets/images/revenue.webp" class="img-fluid left-feature-img" />
@@ -248,13 +247,13 @@
                     </div>
                 </div>
             </div>
-            <div class="gateway my-3">
+            <div class="gateway my-3" data-aos="fade-up" data-aos-duration="2000">
                 <div class="plugins-inner">
                     <h3 class="text-white">50<span class="ps-2">+</span></h3>
                     <p class="text-center text-white">PRE INSTALLED PAYMENT GATEWAYS</p>
                 </div>
             </div>
-            <div class="extension my-3">
+            <div class="extension my-3" data-aos="fade-up" data-aos-duration="2000">
                 <div class="plugins-inner">
                     <h3 class="text-white">30<span class="ps-2">+</span></h3>
                     <p class="text-center text-white">FREE EXTENSIONS WORTH 500 USD!</p>
@@ -369,10 +368,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- GLightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.1.0/js/glightbox.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-
+        AOS.init({
+            once: true,
+        });
     </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

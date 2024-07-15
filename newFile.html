@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .responsive-image {
+            flex: 1 1 auto;
+            max-width: calc(33.33% - 10px);
+            height: auto;
+            margin: 5px;
+            aspect-ratio: 360 / 170;
+            object-fit: cover;
+        }
+
+        @media (max-width: 767px) {
+            .box-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .responsive-image {
+                max-width: 100%;
+                max-width: 360px;
+                height: 170px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-content">
+        <img src="./assets/images/5-Screens-App-UI-Mockup 2.png" alt="Image 1" class="responsive-image">
+        <img src="./assets/images/5-Screens-App-UI-Mockup 2.png" alt="Image 2" class="responsive-image">
+        <img src="./assets/images/5-Screens-App-UI-Mockup 2.png" alt="Image 3" class="responsive-image">
+    </div>
+</body>
+
+</html>

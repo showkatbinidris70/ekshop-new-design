@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- swiper slider  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+    <style>
+        .slider-image {
+            border-radius: 49px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .active {
+            opacity: 1;
+            z-index: 1000;
+        }
+
+        .active-link {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        #image_2 {
+            margin-left: 60px;
+            margin-top: 60px;
+        }
+
+        #image_3 {
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+
+        #image_4 {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-sm-6 col-lg-4">
+                <div class="d-flex gap-4 align-items-center justify-content-center">
+                    <div class=""><img src="./assets/flow/img-5.png" class="img-fluid" /></div>
+                    <div class="">
+                        <div class="w-100 my-2"><a href="#" data-image="image_1" class="active-link"> <img
+                                    src="./assets/flow/circle-1.png" class="img-fluid" /></a></div>
+                        <div class="w-100 my-2"><a href="#" data-image="image_2"> <img src="./assets/flow/circle-2.png"
+                                    class="img-fluid" /></a></div>
+                        <div class="w-100 my-2"><a href="#" data-image="image_3"> <img src="./assets/flow/circle-3.png"
+                                    class="img-fluid" /></a></div>
+                        <div class="w-100 my-2"><a href="#" data-image="image_4"> <img src="./assets/flow/circle-4.png"
+                                    class="img-fluid" /></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-8">
+                <div class="position-relative">
+                    <div><img src="./assets/flow/img-1.png" class="img-fluid position-absolute slider-image active"
+                            id="image_1" />
+                    </div>
+                    <div><img src="./assets/flow/img-2.png" class="img-fluid position-absolute slider-image"
+                            id="image_2" />
+                    </div>
+                    <div><img src="./assets/flow/img-3.png" class="img-fluid position-absolute slider-image"
+                            id="image_3" />
+                    </div>
+                    <div><img src="./assets/flow/img-4.png" class="img-fluid position-absolute slider-image"
+                            id="image_4" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- swiper slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a[data-image]');
+            const images = document.querySelectorAll('.slider-image');
+
+            // Function to handle activation
+            function activateImage(targetId) {
+                // Remove active class from all images
+                images.forEach(image => {
+                    if (image.id === targetId) {
+                        image.classList.add('active');
+                    } else {
+                        image.classList.remove('active');
+                    }
+                });
+
+                // Remove active class from all links
+                links.forEach(link => {
+                    link.classList.remove('active-link');
+                });
+
+                // Add active class to the corresponding link
+                document.querySelector(`a[data-image="${targetId}"]`).classList.add('active-link');
+            }
+
+            // Add click event to links
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('data-image');
+                    activateImage(targetId);
+                });
+            });
+
+            // Add click event to slider images
+            images.forEach(image => {
+                image.addEventListener('click', function () {
+                    const targetId = this.id;
+                    activateImage(targetId);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
