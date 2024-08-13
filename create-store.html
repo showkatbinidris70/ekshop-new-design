@@ -37,7 +37,7 @@
     <title>Ekshop</title>
 
     <style>
-       
+
     </style>
 
 </head>
@@ -215,7 +215,15 @@
                             </div>
                         </div>
                         <div class="col-sm-12 col-lg-6">
-                            <img src="./assets/images/Col 2.png" class="img-fluid w-100 h-100" />
+                            <!-- <img src="./assets/images/placeholder.jpg" class="img-fluid w-100 h-100" /> -->
+                            <!-- Button that triggers the modal -->
+                            <div class="d-flex justify-content-center">
+                                <button id="templateButton" type="button" class="btn border-0" data-bs-toggle="modal"
+                                    data-bs-target="#templateModal">
+                                    <img id="buttonImage" src="./assets/images/placeholder.jpg" alt="Template Image"
+                                        class="img-fluid rounded w-100 h-100" />
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="create-store-footer mt-3">
@@ -239,13 +247,215 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="templateModal" tabindex="-1" aria-labelledby="templateModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="templateModalLabel">Choose Your Template</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <!-- Multiple template images and "Pick Me" buttons -->
+
+                            <div class="container">
+                                <div class="row justify-content-between mx-0 my-3" data-aos="fade-up"
+                                    data-aos-duration="2000">
+                                    <ul class="nav shadow p-4">
+                                        <li class="nav-item">
+                                            <a class="nav-link link-secondary active" id="all-tab" data-bs-toggle="tab"
+                                                data-bs-target="#all" href="#">All</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link link-secondary" id="Organic-tab" data-bs-toggle="tab"
+                                                data-bs-target="#Organic" href="#">Organic</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link link-secondary" id="cosmetic-tab" data-bs-toggle="tab"
+                                                data-bs-target="#cosmetic" href="#">cosmetic</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="tabContent" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="tab-pane fade show active" id="all" role="tabpanel"
+                                        aria-labelledby="all-tab">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-6 mb-3">
+                                                <div class="card shadow border-0 p-1">
+                                                    <div class="image-wrapper aspect-ratio-16-9">
+                                                        <img src="./assets/images/store01.webp" alt="Template 1"
+                                                            class="img-fluid w-100 h-100 p-2" />
+                                                    </div>
+                                                    <div class="mx-auto py-2">
+                                                        <button data-template="./assets/images/store01.webp"
+                                                            type="button" class="btn btn-success pickMeButton"><i
+                                                                class="fa-solid fa-check pe-1"></i> Pick
+                                                            Me</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 mb-3">
+                                                <div class="card shadow border-0 p-1">
+                                                    <div class="image-wrapper aspect-ratio-16-9">
+                                                        <img src="./assets/images/store02.webp" alt="Template 2"
+                                                            class="img-fluid w-100 h-100" />
+                                                    </div>
+                                                    <div class="mx-auto py-2">
+                                                        <button data-template="./assets/images/store02.webp"
+                                                            type="button" class="btn btn-success pickMeButton"><i
+                                                                class="fa-solid fa-check pe-1"></i> Pick
+                                                            Me</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 mb-3">
+                                                <div class="card shadow border-0 p-1">
+                                                    <div class="image-wrapper aspect-ratio-16-9">
+                                                        <img src="./assets/images/store03.webp" alt="Template 3"
+                                                            class="img-fluid w-100 h-100" />
+                                                    </div>
+                                                    <div class="mx-auto py-2">
+                                                        <button data-template="./assets/images/store03.webp"
+                                                            type="button" class="btn btn-success pickMeButton"><i
+                                                                class="fa-solid fa-check pe-1"></i> Pick
+                                                            Me</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 mb-3">
+                                                <div class="card shadow border-0 p-1">
+                                                    <div class="image-wrapper aspect-ratio-16-9">
+                                                        <img src="./assets/images/store04.webp" alt="Template 4"
+                                                            class="img-fluid w-100 h-100" />
+                                                    </div>
+                                                    <div class="mx-auto py-2">
+                                                        <button data-template="./assets/images/store04.webp"
+                                                            type="button" class="btn btn-success pickMeButton"><i
+                                                                class="fa-solid fa-check pe-1"></i> Pick
+                                                            Me</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="Organic" role="tabpanel"
+                                        aria-labelledby="Organic-tab">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-6 mb-3">
+                                                <div class="card shadow border-0 p-1">
+                                                    <div class="image-wrapper aspect-ratio-16-9">
+                                                        <img src="./assets/images/store01.webp" alt="Template 1"
+                                                            class="img-fluid w-100 h-100 p-2" />
+                                                    </div>
+                                                    <div class="mx-auto py-2">
+                                                        <button data-template="./assets/images/store01.webp"
+                                                            type="button" class="btn btn-success pickMeButton"><i
+                                                                class="fa-solid fa-check pe-1"></i> Pick
+                                                            Me</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 mb-3">
+                                                <div class="card shadow border-0 p-1">
+                                                    <div class="image-wrapper aspect-ratio-16-9">
+                                                        <img src="./assets/images/store02.webp" alt="Template 2"
+                                                            class="img-fluid w-100 h-100" />
+                                                    </div>
+                                                    <div class="mx-auto py-2">
+                                                        <button data-template="./assets/images/store02.webp"
+                                                            type="button" class="btn btn-success pickMeButton"><i
+                                                                class="fa-solid fa-check pe-1"></i> Pick
+                                                            Me</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 mb-3">
+                                                <div class="card shadow border-0 p-1">
+                                                    <div class="image-wrapper aspect-ratio-16-9">
+                                                        <img src="./assets/images/store03.webp" alt="Template 3"
+                                                            class="img-fluid w-100 h-100" />
+                                                    </div>
+                                                    <div class="mx-auto py-2">
+                                                        <button data-template="./assets/images/store03.webp"
+                                                            type="button" class="btn btn-success pickMeButton"><i
+                                                                class="fa-solid fa-check pe-1"></i> Pick
+                                                            Me</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="cosmetic" role="tabpanel"
+                                        aria-labelledby="cosmetic-tab">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-6 mb-3">
+                                                <div class="card shadow border-0 p-1">
+                                                    <div class="image-wrapper aspect-ratio-16-9">
+                                                        <img src="./assets/images/store01.webp" alt="Template 1"
+                                                            class="img-fluid w-100 h-100 p-2" />
+                                                    </div>
+                                                    <div class="mx-auto py-2">
+                                                        <button data-template="./assets/images/store01.webp"
+                                                            type="button" class="btn btn-success pickMeButton"><i
+                                                                class="fa-solid fa-check pe-1"></i> Pick
+                                                            Me</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 mb-3">
+                                                <div class="card shadow border-0 p-1">
+                                                    <div class="image-wrapper aspect-ratio-16-9">
+                                                        <img src="./assets/images/store02.webp" alt="Template 2"
+                                                            class="img-fluid w-100 h-100" />
+                                                    </div>
+                                                    <div class="mx-auto py-2">
+                                                        <button data-template="./assets/images/store02.webp"
+                                                            type="button" class="btn btn-success pickMeButton"><i
+                                                                class="fa-solid fa-check pe-1"></i> Pick
+                                                            Me</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more templates as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
+
+    <script>
+        // create store
+        // Event listener for all "Pick Me" buttons
+        document.querySelectorAll(".pickMeButton").forEach((button) => {
+            button.addEventListener("click", function () {
+                // Get the template image source from the button's data attribute
+                var templateSrc = this.getAttribute("data-template");
+                // Set the button image source to the template image
+                document.getElementById("buttonImage").src = templateSrc;
+                // Close the modal
+                var modal = bootstrap.Modal.getInstance(
+                    document.getElementById("templateModal")
+                );
+                modal.hide();
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>

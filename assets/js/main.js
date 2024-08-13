@@ -154,3 +154,4 @@ document.body.addEventListener("click", function (event) {
     lightbox.openAt(currentIndex);
   }
 });
+

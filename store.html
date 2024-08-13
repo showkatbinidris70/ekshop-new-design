@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Picker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <!-- Button that triggers the modal -->
+        <button id="templateButton" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#templateModal">
+            <img id="buttonImage" src="./assets/images/5-Screens-App-UI-Mockup 2.png" alt="Template Image"
+                class="img-fluid" />
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="templateModal" tabindex="-1" aria-labelledby="templateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="templateModalLabel">Choose Your Template</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <!-- Multiple template images and "Pick Me" buttons -->
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <div class="template-item">
+                                <img src="./assets/images/Blob-1.png" alt="Template 1" class="img-fluid mb-3" />
+                                <button data-template="./assets/images/Blob-1.png" type="button"
+                                    class="btn btn-success pickMeButton">Pick
+                                    Me</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="template-item">
+                                <img src="./assets/images/5f20ed202528d9b84a1734d03e908223.png" alt="Template 2"
+                                    class="img-fluid mb-3" />
+                                <button data-template="./assets/images/5f20ed202528d9b84a1734d03e908223.png"
+                                    type="button" class="btn btn-success pickMeButton">Pick
+                                    Me</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="template-item">
+                                <img src="./assets/images/checkout.webp" alt="Template 3" class="img-fluid mb-3" />
+                                <button data-template="./assets/images/checkout.webp" type="button"
+                                    class="btn btn-success pickMeButton">Pick
+                                    Me</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more templates as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Event listener for all "Pick Me" buttons
+        document.querySelectorAll('.pickMeButton').forEach(button => {
+            button.addEventListener('click', function () {
+                // Get the template image source from the button's data attribute
+                var templateSrc = this.getAttribute('data-template');
+                // Set the button image source to the template image
+                document.getElementById('buttonImage').src = templateSrc;
+                // Close the modal
+                var modal = bootstrap.Modal.getInstance(document.getElementById('templateModal'));
+                modal.hide();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

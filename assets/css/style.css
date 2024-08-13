@@ -1325,6 +1325,57 @@ header .navbar-light button span {
   line-height: 20px;
   text-align: left;
 }
+
+.create-store-container .image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.create-store-container .aspect-ratio-16-9 {
+  padding-bottom: 100%;
+}
+
+.create-store-container .image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.create-store-container .btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+/* create store */
+.create-store-container .title {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.create-store-container .nav {
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.create-store-container .nav .nav-link {
+  font-size: 16px;
+  color: #92278f;
+  text-transform: capitalize;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+.create-store-container .nav-link.active {
+  background-color: #92278f;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.3s linear;
+  font-weight: 600;
+}
 /* create- store end */
 /* free-secvice-section start */
 .free-secvice-section .title {
@@ -2044,11 +2095,7 @@ footer .footer-bottom ul li a {
     padding: 1.5rem 2rem;
     border-radius: 0px 0px 20px 20px;
   }
-  /* create store */
-  .create-store-container .title {
-    font-size: 24px;
-    line-height: 36px;
-  }
+
   /* free-secvice-section start */
   .free-secvice-section .title {
     font-size: 32px;
