@@ -51,18 +51,6 @@ function addPasswordShowHide(el) {
 
 document.querySelectorAll(".show_hide_password").forEach(addPasswordShowHide);
 
-// create store
-document.querySelectorAll(".pickMeButton").forEach((button) => {
-  button.addEventListener("click", function () {
-    var templateSrc = this.getAttribute("data-template");
-    document.getElementById("buttonImage").src = templateSrc;
-    var modal = bootstrap.Modal.getInstance(
-      document.getElementById("templateModal")
-    );
-    modal.hide();
-  });
-});
-
 //coverflow_3d_swiper == swiper slider
 var coverflow_3d_swiper = new Swiper(".swiper", {
   effect: "coverflow",
@@ -166,4 +154,15 @@ document.body.addEventListener("click", function (event) {
     currentIndex = currentIndex < images.length - 1 ? currentIndex + 1 : 0;
     lightbox.openAt(currentIndex);
   }
+});
+
+document.querySelectorAll(".pickMeButton").forEach((button) => {
+  button.addEventListener("click", function () {
+    var templateSrc = this.getAttribute("data-template");
+    document.getElementById("buttonImage").src = templateSrc;
+    var modal = bootstrap.Modal.getInstance(
+      document.getElementById("templateModal")
+    );
+    modal.hide();
+  });
 });

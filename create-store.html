@@ -440,19 +440,16 @@
     <script>
         // create store
         // Event listener for all "Pick Me" buttons
-        document.querySelectorAll(".pickMeButton").forEach((button) => {
-            button.addEventListener("click", function () {
-                // Get the template image source from the button's data attribute
-                var templateSrc = this.getAttribute("data-template");
-                // Set the button image source to the template image
-                document.getElementById("buttonImage").src = templateSrc;
-                // Close the modal
-                var modal = bootstrap.Modal.getInstance(
-                    document.getElementById("templateModal")
-                );
-                modal.hide();
-            });
-        });
+        // document.querySelectorAll(".pickMeButton").forEach((button) => {
+        //     button.addEventListener("click", function () {
+        //         var templateSrc = this.getAttribute("data-template");
+        //         document.getElementById("buttonImage").src = templateSrc;
+        //         var modal = bootstrap.Modal.getInstance(
+        //             document.getElementById("templateModal")
+        //         );
+        //         modal.hide();
+        //     });
+        // });
 
     </script>
 
