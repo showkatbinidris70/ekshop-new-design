@@ -1698,11 +1698,11 @@ header .navbar-light button span {
 }
 
 .demo-features .carousel-control-prev {
-  margin-left: -48% !important;
+  margin-left: -40% !important;
 }
 
 .demo-features .carousel-control-next {
-  margin-right: -48% !important;
+  margin-right: -40% !important;
 }
 
 /* footer start  */
