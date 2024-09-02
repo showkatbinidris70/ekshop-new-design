@@ -1,26 +1,8 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("../fonts/Montserrat-Regular.woff") format("woff"),
-    url("../fonts/Montserrat-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
-    url("../fonts/Montserrat-Bold.woff") format("woff"),
-    url("../fonts/Montserrat-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
 * {
   padding: 0;
   margin: 0;
 }
-
+/* font family: popinos: 600, Nunito, Inter-500,700,  Roboto-800, 500,400  , Source Sans Pro: 500,400 */
 ul,
 ol,
 a,
@@ -38,7 +20,7 @@ h6 {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto";
   box-sizing: border-box;
 }
 
@@ -60,7 +42,7 @@ header .top-header .content ul li img {
   height: 20px;
 }
 header .top-header .content ul li p {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -73,7 +55,7 @@ header .top-header .content ul li p:hover {
   border-radius: 2px;
 }
 header .top-header .content ul li a {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -101,7 +83,7 @@ header .navbar-nav .nav-item:hover {
   color: var(--text_primary);
 }
 header .navbar-nav .nav-item .nav-link {
-  font-family: "Montserrat", sans-serif;
+  font-family: Nunito;
   font-size: 16px;
   font-weight: 700;
   line-height: 24.55px;
@@ -151,7 +133,7 @@ header .navbar-light button span {
   padding-bottom: 50px;
 }
 .hero-section .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
@@ -163,7 +145,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .hero-section .short-message {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 22px;
   font-weight: 400;
   line-height: 30px;
@@ -178,7 +160,7 @@ header .navbar-light button span {
   background: #84b13f;
   padding: 18px 42px 18px 42px;
   border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -206,7 +188,7 @@ header .navbar-light button span {
   margin-right: 40px;
 }
 .video-section .video-container .small-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -218,7 +200,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .video-section .video-container .large-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 34px;
   font-weight: 400;
   line-height: 46px;
@@ -235,7 +217,7 @@ header .navbar-light button span {
   padding: 18px 42px 18px 42px;
   border-radius: 4px;
   background: #7f217c;
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -339,7 +321,7 @@ header .navbar-light button span {
   border: 2px solid #7f217c;
 }
 .admin-panel .left-side .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 45px;
   font-weight: 600;
   line-height: 60px;
@@ -347,7 +329,7 @@ header .navbar-light button span {
   color: #0b0a33;
 }
 .admin-panel .left-side p {
-  font-family: "Montserrat", sans-serif;
+  font-family: Inter;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
@@ -357,7 +339,7 @@ header .navbar-light button span {
   background: #84b13f;
   padding: 18px 42px 18px 42px;
   border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -376,14 +358,14 @@ header .navbar-light button span {
   border-radius: 10px;
 }
 .admin-panel .right-side .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Inter;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-align: left;
 }
 .admin-panel .right-side .short-message {
-  font-family: "Montserrat", sans-serif;
+  font-family: Inter;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
@@ -396,7 +378,7 @@ header .navbar-light button span {
 /* admin-panel end */
 /* features start */
 .features .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 45px;
   font-weight: 600;
   line-height: 60px;
@@ -408,7 +390,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .features .short-message {
-  font-family: "Montserrat", sans-serif;
+  font-family: Inter;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
@@ -419,7 +401,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .features .cta-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -449,7 +431,7 @@ header .navbar-light button span {
   background-color: #dbeafe;
   padding: 4px 8px 4px 8px;
   border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
@@ -457,7 +439,7 @@ header .navbar-light button span {
   color: #1e40af;
 }
 .features .right-side .content-box .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   line-height: 22px;
@@ -469,7 +451,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .features .right-side .content-box .description {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
@@ -485,7 +467,7 @@ header .navbar-light button span {
   border-radius: 8px;
   border: 2px solid #92278f;
   color: #92278f;
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -506,7 +488,7 @@ header .navbar-light button span {
   padding: 100px 0px;
 }
 .real-store .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
@@ -515,14 +497,14 @@ header .navbar-light button span {
 }
 .real-store .title span {
   color: #000;
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
   text-align: center;
 }
 .real-store p {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 30px;
   font-weight: 400;
   line-height: 60px;
@@ -533,7 +515,7 @@ header .navbar-light button span {
   border-radius: 20px;
 }
 .real-store .card .card-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Inter;
   font-size: 28px;
   font-weight: 700;
   line-height: 42px;
@@ -545,7 +527,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .real-store .card .date {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 20px;
   font-weight: 400;
   line-height: 22px;
@@ -553,7 +535,7 @@ header .navbar-light button span {
   color: #7a7d9c;
 }
 .real-store .card .view--store-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 20px;
   font-weight: 700;
   line-height: 22px;
@@ -594,7 +576,7 @@ header .navbar-light button span {
   padding: 100px 0px;
 }
 .clients-logo .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 36px;
   font-weight: 700;
   line-height: 43px;
@@ -602,7 +584,7 @@ header .navbar-light button span {
   color: #92278f;
 }
 .clients-logo .title span {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 36px;
   font-weight: 700;
   line-height: 43px;
@@ -643,7 +625,7 @@ header .navbar-light button span {
 .ecommerce-platforms {
 }
 .ecommerce-platforms .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 34px;
   font-weight: 400;
   line-height: 46px;
@@ -655,7 +637,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .ecommerce-platforms p {
-  font-family: "Montserrat", sans-serif;
+  font-family: Inter;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -694,7 +676,7 @@ header .navbar-light button span {
   padding: 100px 0px;
 }
 .all-features .slogan {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
@@ -703,7 +685,7 @@ header .navbar-light button span {
   color: #475569;
 }
 .all-features .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 56px;
   font-weight: 800;
   line-height: 61.6px;
@@ -716,7 +698,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .all-features .short-message {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 28.8px;
@@ -731,7 +713,7 @@ header .navbar-light button span {
   background: #84b13f;
   padding: 18px 42px 18px 42px;
   border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -747,7 +729,7 @@ header .navbar-light button span {
   background: linear-gradient(264.46deg, #8d258b 0%, #631974 100.57%);
 }
 .online-store .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 56px;
   font-weight: 800;
   line-height: 61.6px;
@@ -759,7 +741,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .online-store .title span {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 56px;
   font-weight: 800;
   line-height: 61.6px;
@@ -771,7 +753,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .online-store p {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 28.8px;
@@ -783,7 +765,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .online-store ul li {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 28.8px;
@@ -794,7 +776,7 @@ header .navbar-light button span {
   background: #84b13f;
   padding: 18px 42px 18px 42px;
   border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -810,7 +792,7 @@ header .navbar-light button span {
   padding: 100px 0px;
 }
 .high-cost-store .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 40px;
   font-weight: 700;
   line-height: 56px;
@@ -819,7 +801,7 @@ header .navbar-light button span {
   padding-bottom: 80px;
 }
 .high-cost-store .card .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Inter;
   font-size: 22px;
   font-weight: 700;
   line-height: 32px;
@@ -830,7 +812,7 @@ header .navbar-light button span {
   padding: 18px 42px;
   border-radius: 4px;
   background-color: #7f217c;
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
@@ -851,7 +833,7 @@ header .navbar-light button span {
 }
 
 .one-click-store h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 50px;
   font-weight: 400;
   line-height: 60px;
@@ -862,7 +844,7 @@ header .navbar-light button span {
   padding: 22px 42px 22px 42px;
   border-radius: 4px;
   background-color: #7f217c;
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 30px;
   font-weight: 400;
   line-height: 24px;
@@ -880,7 +862,7 @@ header .navbar-light button span {
   padding: 50px 0px 250px 0px;
 }
 .make-us-special .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 45px;
   font-weight: 600;
   line-height: 60px;
@@ -892,7 +874,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .make-us-special .short-message {
-  font-family: "Montserrat", sans-serif;
+  font-family: Inter;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
@@ -903,7 +885,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .make-us-special .cta-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -919,7 +901,7 @@ header .navbar-light button span {
   max-height: 350px;
 }
 .make-us-special ul li {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
@@ -940,7 +922,7 @@ header .navbar-light button span {
   background-color: #f3e8ff;
   padding: 4px 8px 4px 8px;
   border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
@@ -960,7 +942,7 @@ header .navbar-light button span {
   color: #166534;
 }
 .make-us-special .content-box .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 28px;
   font-weight: 500;
   line-height: 28px;
@@ -972,7 +954,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .make-us-special .content-box .description {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
@@ -988,7 +970,7 @@ header .navbar-light button span {
   border-radius: 8px;
   border: 2px solid #92278f;
   color: #92278f;
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -1031,7 +1013,7 @@ header .navbar-light button span {
 }
 
 .login-container .signin-part .signin-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
@@ -1039,7 +1021,7 @@ header .navbar-light button span {
 }
 
 .login-container .signin-part .signin-short-message {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -1048,7 +1030,7 @@ header .navbar-light button span {
 }
 
 .login-container .signin-part label {
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1057,7 +1039,7 @@ header .navbar-light button span {
 }
 
 .login-container .signin-part label span {
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1066,7 +1048,7 @@ header .navbar-light button span {
 }
 
 .login-container .signin-part form:placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1125,7 +1107,7 @@ header .navbar-light button span {
 }
 
 .login-container .signin-part .forgot-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -1137,7 +1119,7 @@ header .navbar-light button span {
   padding: 14px 49px 14px 49px;
   border-radius: 6px;
   background: linear-gradient(264.46deg, #8d258b 0%, #631974 100.57%);
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -1150,7 +1132,7 @@ header .navbar-light button span {
   border-radius: 6px;
   border: 1px solid #e8e9ea;
   background-color: #e8e9ea;
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -1159,7 +1141,7 @@ header .navbar-light button span {
 }
 
 .login-container .signin-part .signup-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -1168,7 +1150,7 @@ header .navbar-light button span {
 }
 
 .login-container .signin-part .signup-btn span {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -1182,7 +1164,7 @@ header .navbar-light button span {
 }
 
 .create-store-section .create-store-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 60px;
   font-weight: 700;
   line-height: 56px;
@@ -1194,7 +1176,7 @@ header .navbar-light button span {
 
 .create-store-container .title {
   background: linear-gradient(264.46deg, #631974 0%, #8d258b 100.57%);
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 30px;
   font-weight: 400;
   line-height: 56px;
@@ -1204,7 +1186,7 @@ header .navbar-light button span {
 }
 
 .create-store-container .top-search-bar label-style {
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1221,7 +1203,7 @@ header .navbar-light button span {
 }
 
 .create-store-container .top-search-bar input::placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1235,7 +1217,7 @@ header .navbar-light button span {
 }
 
 .create-store-container form label {
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1244,7 +1226,7 @@ header .navbar-light button span {
 }
 
 .create-store-container form label span {
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1253,7 +1235,7 @@ header .navbar-light button span {
 }
 
 .create-store-container form input::placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1293,7 +1275,7 @@ header .navbar-light button span {
 }
 
 .create-store-container .radio-btn .online-business {
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -1302,7 +1284,7 @@ header .navbar-light button span {
 }
 
 .create-store-container .radio-btn label {
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1314,7 +1296,7 @@ header .navbar-light button span {
   background: #84b13f;
   padding: 15px 42px 15px 42px;
   border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1328,7 +1310,7 @@ header .navbar-light button span {
 
 .create-store-container .create-store-footer .terms-and-conditions {
   color: #242424;
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1337,7 +1319,7 @@ header .navbar-light button span {
 
 .create-store-container .create-store-footer .terms-and-conditions a {
   color: #242424;
-  font-family: "Montserrat", sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1383,7 +1365,7 @@ header .navbar-light button span {
   font-size: 16px;
   color: #92278f;
   text-transform: capitalize;
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-weight: 400;
 }
 
@@ -1397,7 +1379,7 @@ header .navbar-light button span {
 /* create- store end */
 /* free-secvice-section start */
 .free-secvice-section .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 56px;
   font-weight: 800;
   line-height: 61.6px;
@@ -1431,7 +1413,7 @@ header .navbar-light button span {
   width: 96px;
 }
 .free-secvice-section .features .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
   line-height: 26.4px;
@@ -1443,7 +1425,7 @@ header .navbar-light button span {
   -webkit-box-orient: vertical;
 }
 .free-secvice-section .features .description {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
@@ -1532,7 +1514,7 @@ header .navbar-light button span {
   text-transform: capitalize;
   font-weight: 600;
   font-size: 18px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
 }
 .demo-projects .card:hover {
   box-shadow: 1px 4px 8px -2px #000;
@@ -1545,7 +1527,7 @@ header .navbar-light button span {
   background-color: #749c37;
   font-size: 14px;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-weight: 400;
 }
 .demo-projects .card .feature-btn:hover {
@@ -1558,7 +1540,7 @@ header .navbar-light button span {
   background-color: #749c37;
   font-size: 14px;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-weight: 400;
 }
 .demo-projects .card .live-demo-btn:hover {
@@ -1576,7 +1558,7 @@ header .navbar-light button span {
   font-size: 16px;
   color: #92278f;
   text-transform: capitalize;
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-weight: 400;
 }
 
@@ -1592,7 +1574,7 @@ header .navbar-light button span {
 .demo-features .title {
   font-size: 30px;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Popinos";
   color: #666666;
 }
 .demo-features .shape {
@@ -1625,7 +1607,7 @@ header .navbar-light button span {
 }
 
 .demo-features .title-border-left {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Popinos";
   color: #000;
   font-size: 30px;
   display: inline-block;
@@ -1634,7 +1616,7 @@ header .navbar-light button span {
   border-left: 5px solid #84b13f;
 }
 .demo-features .title-border-right {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Popinos";
   color: #000;
   font-size: 30px;
   display: inline-block;
@@ -1644,7 +1626,7 @@ header .navbar-light button span {
 }
 
 .demo-features .description {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Popinos";
   color: #000;
   font-size: 16px;
   display: inline-block;
@@ -1689,12 +1671,12 @@ header .navbar-light button span {
 .demo-features .gateway h3 {
   font-size: 80px;
   font-weight: 800;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato";
 }
 .demo-features .extension h3 {
   font-size: 80px;
   font-weight: 800;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato";
 }
 .demo-features .image-wrapper {
   position: relative;
@@ -1728,7 +1710,7 @@ footer {
   background: #334155;
 }
 footer .footer-main .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -1736,7 +1718,7 @@ footer .footer-main .title {
   color: #e2e8f0;
 }
 footer .footer-main .short-message {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
@@ -1748,7 +1730,7 @@ footer .footer-main .short-message {
   -webkit-box-orient: vertical;
 }
 footer .footer-main ul li a {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
@@ -1756,7 +1738,7 @@ footer .footer-main ul li a {
   color: #e2e8f0;
 }
 footer .footer-main address {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
@@ -1764,7 +1746,7 @@ footer .footer-main address {
   color: #e2e8f0;
 }
 footer .footer-bottom ul li {
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
@@ -2094,7 +2076,7 @@ footer .footer-bottom ul li a {
     font-size: 16px;
   }
   .admin-panel .right-side .short-message {
-    font-family: "Montserrat", sans-serif;
+    font-family: Inter;
     font-size: 14px;
   }
   /* features start */
@@ -2287,7 +2269,7 @@ footer .footer-bottom ul li a {
     font-size: 16px;
   }
   .admin-panel .right-side .short-message {
-    font-family: "Montserrat", sans-serif;
+    font-family: Inter;
     font-size: 14px;
   }
   /* features start */
